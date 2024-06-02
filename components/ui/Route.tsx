@@ -13,7 +13,7 @@ const Route = ({route, label, isActive, onClick}: routeProps) => {
           href={route}
           onClick={onClick}
           className={clsx(
-              isActive && "text-primary rounded-none bg-transparent",
+              isActive && "text-primary",
           )}
 
       >{label}</Link>
