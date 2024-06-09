@@ -1,10 +1,10 @@
+import getCurrentUser from "@/app/actions/getCurrentUser";
+import CreateForm from "@/components/shared/CreateForm";
 
-
-const Page = () => {
+const Page = async () => {
+    const user = await getCurrentUser()
     return(
-        <div>
-            Page
-        </div>
+        <CreateForm user={user} />
     )
 }
 
