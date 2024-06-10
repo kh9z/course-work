@@ -30,7 +30,7 @@ const LatestPost: React.FC<{ posts: PostTypes[] }> = ({posts,}) => {
                     id="latest-post"
                     className="text-center text-2xl font-extrabold uppercase text-tertiary inline-block px-2 mb-10"
                 >
-                    Latest Post
+                    Остання публікація
                 </h2>
             </div>
 

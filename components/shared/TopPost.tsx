@@ -16,7 +16,7 @@ const TopPost: React.FC<{ posts: PostTypes[] }> = ({posts,}) => {
                     id="top-post"
                     className="text-center text-2xl font-extrabold uppercase text-tertiary inline-block px-2 mb-10"
                 >
-                    Top Post
+                    Популярні
                 </h2>
             </div>
 

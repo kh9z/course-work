@@ -38,7 +38,7 @@ const footer = () => {
                     </div>
                 </div>
                 <div className="w-full text-center mt-3 text-sm text-white">
-                    <span>All Rights Reserved Traveler.com</span>
+                    <span>Усі права захищені Traveler.com</span>
                 </div>
             </div>
         </div>

@@ -41,15 +41,15 @@ const CreateForm = ({user}: {user: userTypes}) => {
                         <SingleImageDropzone onChange={(file) => setFile(file)} value={file} width={200} height={200}/>
                         <Form action={createPost} className="flex flex-col gap-5 mt-5" onSubmit={() => setFile(undefined)}>
                             <Input name="image" type="hidden" value={imagePath}/>
-                            <Input name="title" type="text" placeholder="Enter Title" />
-                            <textarea required name="description" rows={10} placeholder="Write here..." className="text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-primary sm:leading-6 border w-full border-gray-200 p-2 rounded-md py-1.5 outline-none"></textarea>
+                            <Input name="title" type="text" placeholder="Введіть назву" />
+                            <textarea required name="description" rows={10} placeholder="Напишіть тут..." className="text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-primary sm:leading-6 border w-full border-gray-200 p-2 rounded-md py-1.5 outline-none"></textarea>
                             <select name="category" required className="text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-primary sm:leading-6 border w-full border-gray-200 p-2 rounded-md py-1.5 outline-none">
                                 <option value="" disabled selected>Choose Tag</option>
-                                <option value="Adventure">Adventure</option>
-                                <option value="Culture">Culture</option>
-                                <option value="Journey">Journey</option>
-                                <option value="Discovery">Discovery</option>
-                                <option value="Wanderlust">Wanderlust</option>
+                                <option value="Adventure">Пригода</option>
+                                <option value="Culture">Культура</option>
+                                <option value="Journey">Подорож</option>
+                                <option value="Discovery">Відкриття</option>
+                                <option value="Wanderlust">Жага до подорожей</option>
                             </select>
                             <Input name="email" type="hidden" value={user?.email || ""}/>
                             <Button type="submit" text="Create" aria="create blog"/>

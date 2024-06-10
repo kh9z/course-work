@@ -2,6 +2,7 @@ import Hero from "@/components/shared/Hero";
 import LatestPost from "@/components/shared/LatestPost";
 import TopPost from "@/components/shared/TopPost";
 import prisma from "@/lib/prismadb";
+
 const Home = async () => {
     const posts = await prisma.blog.findMany({
         include: {

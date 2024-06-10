@@ -22,13 +22,13 @@ const DeletePost: React.FC<{ post: PostTypes }> = ({post}) => {
                          onClick={() => setShowModal(false)}>
                         <div className="w-screen h-screen bg-black/40 absolute"/>
                         <div className="bg-white p-6 rounded shadow-lg z-40" onClick={(e) => e.stopPropagation()}>
-                            <p>Are you sure you want to delete this post ?</p>
+                            <p>Ви впевнені, що хочете видалити цю публікацію?</p>
                             <div className="flex gap-3 mt-5 justify-center">
                                 <form action={deletePost} onSubmit={closemModal}>
                                     <Input name="postId" type="hidden" value={post.id}/>
-                                    <Button text="Yes" aria="delete post" type="submit"/>
+                                    <Button text="Так" aria="delete post" type="submit"/>
                                 </form>
-                                <Button text="No" aria="cancel delete post" onClick={closemModal}/>
+                                <Button text="Ні" aria="cancel delete post" onClick={closemModal}/>
                             </div>
                         </div>
                     </div>

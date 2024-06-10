@@ -88,10 +88,10 @@ const Navbar: React.FC<NavbarProps> = ({user}) => {
                 {openUserMenu && (
                     <ul className="z-10 absolute right-12 top-[70px] w-48 bg-white shadow-md rounded-md p-4">
                         <Link href="/create" onClick={() => setOpenUserMenu(false)}>
-                            <li>Create a post</li>
+                            <li>Створити пост</li>
                         </Link>
                         <Link href="/userposts" onClick={() => setOpenUserMenu(false)}>
-                            <li>My Post</li>
+                            <li>Мої пости</li>
                         </Link>
 
                         <li className="cursor-pointer" onClick={() => signOut()}>

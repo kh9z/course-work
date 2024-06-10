@@ -51,7 +51,7 @@ const Posts: React.FC<{ posts: PostTypes[] }> = ({
                     id="posts"
                     className="text-center text-2xl font-extrabold uppercase text-tertiary inline-block px-2 mb-10"
                 >
-                    All Post
+                    Усі пости
                 </h2>
             </div>
 
@@ -82,7 +82,7 @@ const Posts: React.FC<{ posts: PostTypes[] }> = ({
                     <div className="flex justify-center">
                         <Button
                             onClick={showMoreBlogs}
-                            text="Show more"
+                            text="Показати більше"
                             aria="Show more blog post"
                         />
                     </div>

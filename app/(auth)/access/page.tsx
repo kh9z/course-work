@@ -40,7 +40,7 @@ const Page = () => {
                             Traveler
                         </h1>
                     </Link>
-                    <span className="text-sm">Log in or Sign up with the links below</span>
+                    <span className="text-sm">Увійдіть або зареєструйтеся за посиланнями нижче</span>
                     <GoogleLoginButton onClick={() => socialAction("google")}/>
                     <FacebookLoginButton/>
                     <GithubLoginButton/>

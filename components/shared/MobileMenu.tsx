@@ -51,8 +51,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({user,}) => {
                         <div className="border-b py-5 text-center">
                             <Link href={"/"}>
                                 <h1 className="text-3xl font-extrabold text-secondary">
-                                    Explore
-                                    <span className="text-primary">X</span>
+                                    Traveler
                                 </h1>
                             </Link>
 
