@@ -2,8 +2,8 @@ import Tag from "../ui/Tag";
 import Overlay from "../ui/Overlay";
 import Link from "next/link";
 import Image from "next/image";
-import { PostTypes } from "@/types/postTypes";
-import { formatDate } from "@/utils/formatDate";
+import {PostTypes} from "@/types/postTypes";
+import {formatDate} from "@/utils/formatDate";
 
 const Hero: React.FC<{ posts: PostTypes[] }> = ({
                                                     posts,
@@ -23,7 +23,7 @@ const Hero: React.FC<{ posts: PostTypes[] }> = ({
                         key={post.id}
                         className="flex flex-col gap-5 mb-5 text-center relative"
                     >
-                        <Tag text={post.category} />
+                        <Tag text={post.category}/>
 
                         <h2 className="text-6xl font-extrabold uppercase text-tertiary">
                             {post.title}
@@ -41,7 +41,7 @@ const Hero: React.FC<{ posts: PostTypes[] }> = ({
                             <span>{post.user.name}</span>
                             <span className=" italic">
                 {formatDate(post.createdAt.toString())}
-              </span>
+                </span>
                         </div>
                         <Link href={`/blog/${post.id}`}>
                             <div className="relative max-h-[600px] overflow-hidden shadow-xl">
@@ -52,7 +52,7 @@ const Hero: React.FC<{ posts: PostTypes[] }> = ({
                                         className="object-cover w-full h-full"
                                     />
                                 )}
-                                <Overlay />
+                                <Overlay/>
                             </div>
                         </Link>
                     </article>
@@ -76,11 +76,11 @@ const Hero: React.FC<{ posts: PostTypes[] }> = ({
                                             className="object-cover w-full h-full"
                                         />
                                     )}
-                                    <Overlay />
+                                    <Overlay/>
                                 </div>
                             </Link>
 
-                            <Tag text={post.category} />
+                            <Tag text={post.category}/>
                             <h3 className="text-1xl font-extrabold uppercase text-tertiary px-5">
                                 {post.title}
                             </h3>
