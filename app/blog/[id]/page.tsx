@@ -6,7 +6,7 @@ import {formatDate} from "@/utils/formatDate";
 
 const getData = async (id: string) => {
     const res = await fetch(
-        `http://localhost:3000/api/post/${id}`,
+        `${process.env.NEXT_URL}/api/post/${id}`,
         {
             cache: "no-store",
         }
